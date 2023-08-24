@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hospital Management Login</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+  </head>
+  <body>
+  
+    <div class="container">
+      <img src="{% static 'images/logo.png' %}" alt="Hospital Icon" class="logo">
+      <h1>Hospital Management Login</h1>
+        <form action="Login">
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="user" placeholder="Enter your username" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="pasw" placeholder="Enter your password" required>
+        </div>
+        {{error}}
+        <button name = "Login" type="submit">Login</button>
+        </form>
+        <div class="signup-link">
+          Don't have an account? <a href="#">Sign up here</a>
+        </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Patient Data Entry Form</title>
+  <!-- Include Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="{% static 'dataentry.css' %}">
+</head>
+<body>
+  <div class="container mt-4">
+    <h1 class="mb-4">Patient Data Entry Form</h1>
+    <form>
+      <div class="form-group">
+        <label for="patientName">Patient Name</label>
+        <input type="text" class="form-control" id="patientName" placeholder="Enter patient name">
+      </div>
+      <div class="form-group">
+        <label for="patientAge">Patient Age</label>
+        <input type="number" class="form-control" id="patientAge" placeholder="Enter patient age">
+      </div>
+      <div class="form-group">
+        <label for="testType">Test Type</label>
+        <select class="form-control" id="testType">
+          <option>Test 1</option>
+          <option>Test 2</option>
+          <option>Test 3</option>
+          <option>Test 4</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="treatmentType">Treatment Type</label>
+        <select class="form-control" id="treatmentType">
+          <option>Treatment 1</option>
+          <option>Treatment 2</option>
+          <option>Treatment 3</option>
+          <option>Treatment 4</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+  <!-- Include Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
